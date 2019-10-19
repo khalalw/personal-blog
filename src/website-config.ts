@@ -21,6 +21,14 @@ export interface WebsiteConfig {
    */
   twitter?: string;
   /**
+   * full url, no username
+   */
+  linkedin?: string;
+  /**
+   * full url, no username
+   */
+  github?: string;
+  /**
    * hide or show all email subscribe boxes
    */
   showSubscribe: boolean;
@@ -49,20 +57,23 @@ export interface WebsiteConfig {
 }
 
 const config: WebsiteConfig = {
-  title: 'Ghost',
-  description: 'The professional publishing platform',
+  title: 'Khalal Walker',
+  description: 'Personal Blog',
   coverImage: 'img/blog-cover.jpg',
   logo: 'img/ghost-logo.png',
   lang: 'en',
-  siteUrl: 'https://gatsby-casper.netlify.com',
+  siteUrl: 'https://www.khalal.dev',
   facebook: 'https://www.facebook.com/ghost',
-  twitter: 'https://twitter.com/tryghost',
-  showSubscribe: true,
-  mailchimpAction: 'https://twitter.us19.list-manage.com/subscribe/post?u=a89b6987ac248c81b0b7f3a0f&amp;id=7d777b7d75',
+  twitter: 'https://twitter.com/khalalw',
+  linkedin: 'https://www.linkedin.com/in/khalalw',
+  github: 'https://www.github.com/khalalw',
+  showSubscribe: false,
+  mailchimpAction:
+    'https://twitter.us19.list-manage.com/subscribe/post?u=a89b6987ac248c81b0b7f3a0f&amp;id=7d777b7d75',
   mailchimpName: 'b_a89b6987ac248c81b0b7f3a0f_7d777b7d75',
   mailchimpEmailFieldName: 'MERGE0',
   googleSiteVerification: 'GoogleCode',
-  footer: 'is based on Gatsby Casper',
+  footer: 'is built with Gatsby',
 };
 
 export default config;

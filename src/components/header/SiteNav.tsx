@@ -6,8 +6,9 @@ import { css } from '@emotion/core';
 
 import { SocialLink } from '../../styles/shared';
 import config from '../../website-config';
-import Facebook from '../icons/facebook';
+import LinkedIn from '../icons/linkedin';
 import Twitter from '../icons/twitter';
+import GitHub from '../icons/github';
 import SubscribeModal from '../subscribe/SubscribeOverlay';
 import SiteNavLogo from './SiteNavLogo';
 
@@ -146,15 +147,26 @@ class SiteNav extends React.Component<SiteNavProps> {
         </SiteNavLeft>
         <SiteNavRight>
           <SocialLinks>
-            {config.facebook && (
+            {config.github && (
               <a
                 css={SocialLink}
-                href={config.facebook}
+                href={config.github}
                 target="_blank"
-                title="Facebook"
+                title="GitHub"
                 rel="noopener noreferrer"
               >
-                <Facebook />
+                <GitHub />
+              </a>
+            )}
+            {config.linkedin && (
+              <a
+                css={SocialLink}
+                href={config.linkedin}
+                target="_blank"
+                title="LinkedIn"
+                rel="noopener noreferrer"
+              >
+                <LinkedIn />
               </a>
             )}
             {config.twitter && (
