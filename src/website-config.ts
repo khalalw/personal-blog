@@ -59,7 +59,7 @@ export interface WebsiteConfig {
 const config: WebsiteConfig = {
   title: 'Khalal Walker',
   description: 'Personal Blog',
-  coverImage: 'img/blog-cover.jpg',
+  coverImage: 'img/photo-cover.jpg',
   logo: 'img/ghost-logo.png',
   lang: 'en',
   siteUrl: 'https://www.khalal.dev',

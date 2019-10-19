@@ -71,14 +71,15 @@ const Footer: React.FC = () => {
       <div css={[inner, SiteFooterContent]}>
         <section className="copyright">
           <Link to="/">{config.title}</Link> &copy; {new Date().getFullYear()}{' '}
-          {config.footer && (
-            <Link to="/">
-              | {config.title} {config.footer}
-            </Link>
-          )}
+          {config.footer && <Link to="/">| My blog {config.footer}</Link>}
         </section>
         <SiteFooterNav>
           <Link to="/">Latest Posts</Link>
+          {config.github && (
+            <a href={config.github} target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          )}
           {config.linkedin && (
             <a href={config.linkedin} target="_blank" rel="noopener noreferrer">
               LinkedIn
