@@ -174,7 +174,7 @@ const ReadNextCard: React.FC<ReadNextProps> = props => {
     <StaticQuery
       query={graphql`
         query ReadNextQuery {
-          header: file(relativePath: { eq: "img/photo-cover.jpg" }) {
+          header: file(relativePath: { eq: "black-sand.jpeg" }) {
             childImageSharp {
               # Specify the image processing specifications right in the query.
               # Makes it trivial to update as your page's design changes.

@@ -15,7 +15,6 @@ export interface WebsiteConfig {
   /**
    * full url, no username
    */
-  facebook?: string;
   /**
    * full url, no username
    */
@@ -59,11 +58,10 @@ export interface WebsiteConfig {
 const config: WebsiteConfig = {
   title: 'Khalal Walker',
   description: 'Personal Blog',
-  coverImage: 'img/photo-cover.jpg',
+  coverImage: 'img/black-sand.jpeg',
   logo: 'img/ghost-logo.png',
   lang: 'en',
   siteUrl: 'https://www.khalal.dev',
-  facebook: 'https://www.facebook.com/ghost',
   twitter: 'https://twitter.com/khalalw',
   linkedin: 'https://www.linkedin.com/in/khalalw',
   github: 'https://www.github.com/khalalw',
