@@ -229,6 +229,9 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
             <p>{post.excerpt}</p>
           </PostCardExcerpt>
         </Link>
+        <PostCardMeta className="post-card-meta">
+          <ReadingTime>{post.timeToRead} min read</ReadingTime>
+        </PostCardMeta>
       </PostCardContent>
     </article>
   );

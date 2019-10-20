@@ -71,7 +71,6 @@ const Footer: React.FC = () => {
       <div css={[inner, SiteFooterContent]}>
         <section className="copyright">
           <Link to="/">{config.title}</Link> &copy; {new Date().getFullYear()}{' '}
-          {config.footer && <Link to="/">| My blog {config.footer}</Link>}
         </section>
         <SiteFooterNav>
           <Link to="/">Latest Posts</Link>
