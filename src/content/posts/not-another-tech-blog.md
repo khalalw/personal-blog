@@ -30,6 +30,4 @@ This blog will also prevent me from sending bite-sized threads on Twitter that e
 
 If you like something you've read on this site, please do not hesitate to reach out. And even if you don't like it, I'd still love to hear your feedback. I'm always available via [Twitter](https://www.twitter.com/khalalw) or [email](mailto:hello@khalal.dev).
 
-If you've made it this far, I appreciate you very much. Please subscribe and you'll receive an email when I submit a new post. There will not be any spam and you can unsubscribe at any time.
-
 Ciao, for now.
