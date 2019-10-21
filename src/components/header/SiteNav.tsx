@@ -10,7 +10,6 @@ import LinkedIn from '../icons/linkedin';
 import Twitter from '../icons/twitter';
 import GitHub from '../icons/github';
 import SubscribeModal from '../subscribe/SubscribeOverlay';
-import SiteNavLogo from './SiteNavLogo';
 
 const HomeNavRaise = css`
   @media (min-width: 900px) {
