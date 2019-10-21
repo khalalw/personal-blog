@@ -72,11 +72,6 @@ export interface IndexProps {
     numPages: number;
   };
   data: {
-    logo: {
-      childImageSharp: {
-        fixed: any;
-      };
-    };
     header: {
       childImageSharp: {
         fluid: any;
@@ -174,15 +169,6 @@ export default IndexPage;
 
 export const pageQuery = graphql`
   query blogPageQuery($skip: Int!, $limit: Int!) {
-    logo: file(relativePath: { eq: "img/ghost-logo.png" }) {
-      childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
     header: file(relativePath: { eq: "img/black-sand.jpeg" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.

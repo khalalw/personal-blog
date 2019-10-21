@@ -2,7 +2,6 @@ export interface WebsiteConfig {
   title: string;
   description: string;
   coverImage: string;
-  logo: string;
   /**
    * Specifying a valid BCP 47 language helps screen readers announce text properly.
    * See: https://dequeuniversity.com/rules/axe/2.2/valid-lang
@@ -54,7 +53,6 @@ const config: WebsiteConfig = {
   title: 'Khalal Walker',
   description: 'Personal Blog',
   coverImage: 'img/black-sand.jpeg',
-  logo: 'img/ghost-logo.png',
   lang: 'en',
   siteUrl: 'https://www.khalal.dev',
   twitter: 'https://twitter.com/khalalw',

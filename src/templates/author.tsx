@@ -78,11 +78,6 @@ interface AuthorTemplateProps {
     author: string;
   };
   data: {
-    logo: {
-      childImageSharp: {
-        fluid: any;
-      };
-    };
     allMarkdownRemark: {
       totalCount: number;
       edges: Array<{
