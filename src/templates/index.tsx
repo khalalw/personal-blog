@@ -169,7 +169,7 @@ export default IndexPage;
 
 export const pageQuery = graphql`
   query blogPageQuery($skip: Int!, $limit: Int!) {
-    header: file(relativePath: { eq: "img/black-sand.jpeg" }) {
+    header: file(relativePath: { eq: "img/code-cover.jpeg" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
