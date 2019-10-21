@@ -62,8 +62,8 @@ const config: WebsiteConfig = {
   github: 'https://www.github.com/khalalw',
   showSubscribe: false,
   mailchimpAction:
-    'https://twitter.us19.list-manage.com/subscribe/post?u=a89b6987ac248c81b0b7f3a0f&amp;id=7d777b7d75',
-  mailchimpName: 'b_a89b6987ac248c81b0b7f3a0f_7d777b7d75',
+    'https://gmail.us20.list-manage.com/subscribe/post?u=5270a4cb75ff9c778a77f6cd0&amp;id=34781dafcd',
+  mailchimpName: 'MERGE1',
   mailchimpEmailFieldName: 'MERGE0',
   googleSiteVerification: 'qteMOdJLPSS-Cpm5ck8Yo4LIWGcaCbFfWdw7IFTP63w',
 };
