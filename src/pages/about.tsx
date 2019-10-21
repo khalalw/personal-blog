@@ -36,9 +36,20 @@ const About: React.FC = () => (
 
           <PostFullContent className="post-full-content">
             <div className="post-content">
-              <p>Hello</p>
-              <p>Todo: bio</p>
-              <p>Todo: bio</p>
+              <p>Hello 👋🏾</p>
+              <p>
+                My name is Khalal Walker. I'm a Software Engineer and JavaScript enthusiast based in
+                the San Francisco Bay Area.
+              </p>
+              <p>
+                This is my blog where I am documenting my thoughts around JavaScript, front-end
+                technologies, and creating inclusive spaces in tech.
+              </p>
+              <p>I am currently working as a Front End Engineer.</p>
+              <p>I am an alumnus of the greatest HBCU in the world, Jackson State University.</p>
+              <p>
+                The opinions expressed herein are my own and do not represent anyone but myself.
+              </p>
             </div>
           </PostFullContent>
         </article>
