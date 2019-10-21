@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-casper",
-  "description": "Casper for gatsby",
+  "name": "personal-blog",
+  "description": "Khalal's Personal Blog",
   "version": "0.0.0",
   "private": true,
-  "author": "Scott Cooper <scttcper@gmail.com>",
+  "author": "Khalal Walker <hello@khalal.dev>",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
