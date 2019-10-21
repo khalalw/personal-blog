@@ -52,7 +52,7 @@ export interface WebsiteConfig {
 const config: WebsiteConfig = {
   title: 'Khalal Walker',
   description: 'Personal Blog',
-  coverImage: 'img/black-sand.jpeg',
+  coverImage: 'img/code-cover.jpeg',
   lang: 'en',
   siteUrl: 'https://www.khalal.dev',
   twitter: 'https://twitter.com/khalalw',
