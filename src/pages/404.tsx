@@ -64,13 +64,6 @@ const NotFoundPage: React.FC<NotFoundTemplateProps> = props => {
   return (
     <IndexLayout>
       <Wrapper>
-        <header css={[SiteHeader, outer]}>
-          <div className="inner">
-            <SiteNavCenter>
-              <SiteNavLogo />
-            </SiteNavCenter>
-          </div>
-        </header>
         <main id="site-main" css={[ErrorTemplate, outer]}>
           <div css={inner}>
             <section style={{ textAlign: 'center' }}>
