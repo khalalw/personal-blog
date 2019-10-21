@@ -58,11 +58,11 @@ const config: WebsiteConfig = {
   twitter: 'https://twitter.com/khalalw',
   linkedin: 'https://www.linkedin.com/in/khalalw',
   github: 'https://www.github.com/khalalw',
-  showSubscribe: false,
+  showSubscribe: true,
   mailchimpAction:
-    'https://gmail.us20.list-manage.com/subscribe/post?u=5270a4cb75ff9c778a77f6cd0&amp;id=34781dafcd',
+    'https://dev.us20.list-manage.com/subscribe/post?u=1842591205061c28ce2034b15&amp;id=531254d5a5',
   mailchimpName: 'MERGE1',
-  mailchimpEmailFieldName: 'MERGE0',
+  mailchimpEmailFieldName: 'EMAIL',
   googleSiteVerification: 'qteMOdJLPSS-Cpm5ck8Yo4LIWGcaCbFfWdw7IFTP63w',
 };
 
