@@ -95,11 +95,6 @@ interface AuthorTemplateProps {
       twitter?: string;
       location?: string;
       // eslint-disable-next-line @typescript-eslint/camelcase
-      profile_image?: {
-        childImageSharp: {
-          fluid: any;
-        };
-      };
       bio?: string;
       avatar: {
         childImageSharp: {
@@ -148,16 +143,7 @@ const Author: React.FC<AuthorTemplateProps> = props => {
         )}
       </Helmet>
       <Wrapper>
-        <header
-          className="no-cover"
-          css={[outer, SiteHeader]}
-          style={{
-            // eslint-disable-next-line @typescript-eslint/camelcase
-            backgroundImage: author.profile_image
-              ? `url(${author.profile_image.childImageSharp.fluid.src})`
-              : '',
-          }}
-        >
+        <header className="no-cover" css={[outer, SiteHeader]}>
           <div css={inner}>
             <SiteNav isHome={false} />
             <SiteHeaderContent>
@@ -234,13 +220,6 @@ export const pageQuery = graphql`
       twitter
       bio
       location
-      profile_image {
-        childImageSharp {
-          fluid(maxWidth: 3720) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
       avatar {
         childImageSharp {
           fluid(maxWidth: 200) {
