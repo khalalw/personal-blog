@@ -58,7 +58,7 @@ const config: WebsiteConfig = {
   twitter: 'https://twitter.com/khalalw',
   linkedin: 'https://www.linkedin.com/in/khalalw',
   github: 'https://www.github.com/khalalw',
-  showSubscribe: false,
+  showSubscribe: true,
   mailchimpAction:
     'https://gmail.us20.list-manage.com/subscribe/post?u=5270a4cb75ff9c778a77f6cd0&amp;id=34781dafcd',
   mailchimpName: 'MERGE1',
