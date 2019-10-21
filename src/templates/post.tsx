@@ -347,7 +347,7 @@ export const query = graphql`
       timeToRead
       frontmatter {
         title
-        userDate: date(formatString: "D MMMM YYYY")
+        userDate: date(formatString: "MMM D, YYYY")
         date
         tags
         image {
