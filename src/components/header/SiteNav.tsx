@@ -9,6 +9,7 @@ import config from '../../website-config';
 import LinkedIn from '../icons/linkedin';
 import Twitter from '../icons/twitter';
 import GitHub from '../icons/github';
+import RSS from '../icons/rss';
 import SubscribeModal from '../subscribe/SubscribeOverlay';
 
 const HomeNavRaise = css`
@@ -175,6 +176,15 @@ class SiteNav extends React.Component<SiteNavProps> {
                 <Twitter />
               </a>
             )}
+            <a
+              css={SocialLink}
+              href="/rss.xml"
+              title="RSS"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <RSS />
+            </a>
           </SocialLinks>
           {config.showSubscribe && (
             <SubscribeButton onClick={this.openModal}>Subscribe</SubscribeButton>
