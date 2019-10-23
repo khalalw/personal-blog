@@ -30,7 +30,7 @@ const c = new Set('Mississippi'); // Set {'M', 'i', 's', 'p'}
 
 A couple of things to remember:
 
-- Our set `c` is only 4 elements, because sets do not store duplicates.
+- Our set `c` has only 4 elements because sets do not store duplicates.
 - Types are not coerced when values are added, so 4 and '4' are different.
 
 ---
@@ -68,7 +68,7 @@ set3
 
 ### Removing Elements
 
-To remove an element from a set, we use the `delete` method. We pass in the element that we'd like to remove to the method, and a boolean value is returned. If the element is found in the set, it'll be removed and will return `true`. If not, it will return `false`.
+To remove an element from a set, we use the `delete` method. We pass in the element that we'd like to remove to the method and a boolean value is returned. If the element is found in the set, it'll be removed and will return `true`. If not, it will return `false`.
 
 ```javascript
 const set4 = new Set('abcde'); // Set {'a', 'b', 'c', 'd', 'e'}
@@ -114,7 +114,7 @@ setB.has('a'); // false
 
 ###### Set.prototype.forEach()
 
-The `forEach` methods executes a [callback function](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function) for each value in the set.
+The `forEach` method executes a [callback function](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function) for each value in the set.
 
 The function is provided with three parameters: key, value, and the current Set object. For sets, the key and value will be the same.
 
@@ -133,22 +133,29 @@ setC.forEach(printValue);
 
 ### Removing Duplicates From an Array with a Set
 
-There have been times where I've wanted to remove duplicates from an array. My initial implementation was to use a [`filter`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) on a given array. In this solution, I call the [`indexOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) array method on each value. If `indexOf` does not return the current index, the value would be filtered out.
+There have been times where I've wanted to remove duplicates from an array. My initial implementation was to use a [`filter`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter). In this solution, I call the [`indexOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) array method on each value. If `indexOf` does not return the current index, the value would be filtered out.
 
 ```javascript
 const array = [1, 2, 3, 1, 1, 1];
 const filteredArray = array.filter((value, index) => {
   return array.indexOf(value) === index;
 });
+console.log(filteredArray); // [1, 2, 3]
 ```
 
-But... since sets don't store duplicate values, we can leverage that functionality. We can pass in the array as argument to our Set constructor. We now have a set with distinct values. Using a [spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax), we can expand our set values and store them into a new array.
+---
+
+But... since sets don't store duplicate values we can leverage that functionality. Let's pass the array as argument to our Set constructor.
 
 ```javascript
-const arr = [4, 4, 4, 4, 1, 1, 2];
-const set = new Set(arr);
-const filteredArr = [...set];
-console.log(filteredArr); // [4, 1, 2]
+const mySet = new Set(array); // Set {1, 2, 3}
+```
+
+We now have a set with distinct values. Using the [spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax), we can expand our set values and store them into a new array.
+
+```javascript
+const filteredArr = [...mySet];
+console.log(filteredArr); // [1, 2, 3]
 ```
 
 And voila... an array removed of its duplicates.
@@ -156,3 +163,5 @@ And voila... an array removed of its duplicates.
 ---
 
 This article only scratches the surface of what we can do with sets, but this should set a good foundation. I can't wait to see what you build.
+
+---
