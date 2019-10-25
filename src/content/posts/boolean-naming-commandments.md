@@ -4,7 +4,7 @@ title: 'The 5 Commandments of Naming Variables'
 image: '../img/moses-commandments.jpg'
 date: 2019-10-25
 draft: false
-tags: ['javascript', '']
+tags: ['javascript']
 layout: post
 ---
 
