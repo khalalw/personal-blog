@@ -81,7 +81,7 @@ Variable names need not to be one letter, and in a lot of cases one word is even
 
 ### V. Thou shalt keep thy reader in thy thoughts.
 
-Unless you never plan to share your code, it will be read by someone else other than yourself. You shouldn't be the only person to understand it. From a black-box standpoint, if I never look at the inner workings for a function, I should have a general idea of what is happening.
+Unless you never plan to share your code, it will be read by someone else other than yourself. You shouldn't be the only person to understand it. From a black-box standpoint, if I never look at the inner workings of a function, I should have a general idea of what is happening.
 
 ---
 
