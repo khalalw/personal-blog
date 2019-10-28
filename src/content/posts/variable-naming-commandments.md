@@ -16,7 +16,7 @@ One of the things we consistently emphasized was, "Show. Don't tell." Showing is
 
 As I progressed in my coding journey, I realized that programming is very similar to poetry. The end goal for both is to tell a story. Well... to **show** that story to a reader. I believe the most important part of telling a vivid story, in programming, is taking pride in naming variables.
 
-Naming variables can be tough, but it's indubitably worth it. It holds a ton of value when you, or someone else, visit the code at a later time. Code is intended to complete a task but doesn't have much value if no one else can understand it.
+Giving variables meaningful names can be tough, but it's indubitably worth it. It holds a ton of value when you, or someone else, visit the code at a later time. Code is intended to complete a task but doesn't have much value if no one else can understand it.
 
 So, here are 5 commandments that help me make better variable naming decisions, and they may also be great for you.
 
