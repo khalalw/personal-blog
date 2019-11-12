@@ -1,6 +1,6 @@
 ---
 author: Khalal Walker
-title: 'AfroTech 2019: Quick Highlights'
+title: 'AfroTech 2019: Personal Reflection'
 image: '../img/afrotech.jpeg'
 date: 2019-11-11
 draft: false
