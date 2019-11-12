@@ -12,7 +12,7 @@ This past weekend I attended [Blavity's](https://blavity.com/) 4th annual confer
 
 Going into the conference I didn't really know what to expect, but I was excited. Excited to be surrounded by Black intellectuals that are contributing to this industry we call "tech."
 
-Before the conference began, there was an opportunity for attendees to upload their resume in the Resume Book. This gave recruiters from partnered vendors a chance to look through prospective talent and invite them to networking events/mixers, and some companies were even hosting on-site interviews.
+Before the conference began, there was an opportunity for attendees to upload their resume in the resume book. This gave recruiters from partnered vendors a chance to look through prospective talent and invite them to networking events/mixers, and some companies were even hosting on-site interviews.
 
 They packed the conference line-up with amazing speakers which included: Charlamagne Tha God, Angela Rye, Hannibal Burress, Angelica Nwandu, and many more.
 
