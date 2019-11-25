@@ -192,7 +192,7 @@ Let's show step by step:
 [] == 0; // true
 ```
 
-In this example, the array is stringified to `""` and then coerced to a number. An empty strings number value is 0 and `0 == 0` is `true`.
+In this example, the array is stringified to `""` and then coerced to a number. An empty string's number value is 0 and `0 == 0` is `true`.
 
 ---
 
