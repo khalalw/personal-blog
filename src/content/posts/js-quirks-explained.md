@@ -166,7 +166,7 @@ true == 1; // true
 true === 1; // false
 ```
 
-In the first example, the loose equality operator `==` allows for type coercion. The boolean `true` its number representation, which is 1.
+In the first example, the loose equality operator `==` allows for type coercion. The boolean `true` is coerced to its number representation, which is 1.
 
 In the second example, no coercion takes place... so true is not equal to 1.
 
