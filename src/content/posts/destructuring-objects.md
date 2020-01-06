@@ -69,7 +69,7 @@ const city = character.address.city;
 const state = character.address.state;
 ```
 
-We could also we destructure values while accessing the `address` object with dot notation:
+We could also destructure values while accessing the `address` object with dot notation:
 
 ```javascript
 const { street, city, state } = character.address;
