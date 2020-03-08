@@ -22,7 +22,9 @@ After it was live for about 3 months or so, the personal project became a little
 
 I ended it, with no notice to the users. I dropped the database of phone numbers, as I had no reason to keep them. No, I wasn't going to sell their data or keep them for some future marketing plan. That's not my jam.
 
-Many people were really upset with me because it'd become apart of their daily routine. People were sharing the jokes with their co-workers, friends, family and it almost made me sad for ending it. Maybe...just maybe, I'll bring it back again and allow for people to enjoy it.
+Many people were really upset with me because it'd become apart of their daily routine. People were sharing the jokes with their co-workers, friends, family and it almost made me sad for ending it. Maybe...just maybe, ~~I'll bring it back again and allow for people to enjoy it.~~
+
+Edit: It's live again! Text Dad to 415-223-8886
 
 # What I Learned Throughout the Project
 
