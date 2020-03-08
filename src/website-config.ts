@@ -58,12 +58,12 @@ const config: WebsiteConfig = {
   twitter: 'https://twitter.com/khalalw',
   linkedin: 'https://www.linkedin.com/in/khalalw',
   github: 'https://www.github.com/khalalw',
-  showSubscribe: true,
+  showSubscribe: false,
   mailchimpAction:
     'https://dev.us20.list-manage.com/subscribe/post?u=1842591205061c28ce2034b15&amp;id=531254d5a5',
   mailchimpName: 'MERGE1',
   mailchimpEmailFieldName: 'EMAIL',
-  googleSiteVerification: 'qteMOdJLPSS-Cpm5ck8Yo4LIWGcaCbFfWdw7IFTP63w',
+  googleSiteVerification: 'qteMOdJLPSS-Cpm5ck8Yo4LIWGcaCbFfWdw7IFTP63w'
 };
 
 export default config;
