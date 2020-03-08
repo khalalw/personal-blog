@@ -58,7 +58,7 @@ export interface SubscribeProps {
   title: string;
 }
 
-const Subscribe: React.FC<SubscribeProps> = props => {
+const Subscribe: React.FC<SubscribeProps> = _props => {
   return (
     <SubscribeFormSection>
       <h3 css={SubscribeFormTitle}>Subscribe to Khalal's Blog</h3>

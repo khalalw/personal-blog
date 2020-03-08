@@ -547,7 +547,7 @@ export const PostFullContent = styled.section`
 const renderAst = new RehypeReact({
   createElement: React.createElement,
   // components: { 'interactive-counter': Counter },
-  components: {},
+  components: {}
 }).Compiler;
 
 const Ast = ({ ast, ...props }: any) => {
