@@ -2,12 +2,12 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: 'Khalal Walker',
-    description: 'Personal Blog',
-    siteUrl: 'https://www.khalal.dev', // full path to blog - no ending slash
+    title: 'Not Another Tech Blog',
+    description: 'Khalal Walker',
+    siteUrl: 'https://www.khalal.dev' // full path to blog - no ending slash
   },
   mapping: {
-    'MarkdownRemark.frontmatter.author': 'AuthorYaml',
+    'MarkdownRemark.frontmatter.author': 'AuthorYaml'
   },
   plugins: [
     'gatsby-plugin-sitemap',
@@ -16,8 +16,8 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'content',
-        path: path.join(__dirname, 'src', 'content'),
-      },
+        path: path.join(__dirname, 'src', 'content')
+      }
     },
     {
       resolve: 'gatsby-transformer-remark',
@@ -26,8 +26,8 @@ module.exports = {
           {
             resolve: 'gatsby-remark-responsive-iframe',
             options: {
-              wrapperStyle: 'margin-bottom: 1rem',
-            },
+              wrapperStyle: 'margin-bottom: 1rem'
+            }
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
@@ -37,18 +37,18 @@ module.exports = {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 1170,
-              quality: 90,
-            },
-          },
-        ],
-      },
+              quality: 90
+            }
+          }
+        ]
+      }
     },
     'gatsby-transformer-json',
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://www.khalal.dev',
-      },
+        siteUrl: 'https://www.khalal.dev'
+      }
     },
     'gatsby-plugin-emotion',
     'gatsby-plugin-typescript',
@@ -59,8 +59,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-postcss',
       options: {
-        postCssPlugins: [require('postcss-color-function'), require('cssnano')()],
-      },
+        postCssPlugins: [require('postcss-color-function'), require('cssnano')()]
+      }
     },
     {
       resolve: 'gatsby-plugin-google-analytics',
@@ -77,8 +77,8 @@ module.exports = {
         // Specifies what percentage of users should be tracked
         sampleRate: 100,
         // Determines how often site speed tracking beacons will be sent
-        siteSpeedSampleRate: 10,
-      },
-    },
-  ],
+        siteSpeedSampleRate: 10
+      }
+    }
+  ]
 };

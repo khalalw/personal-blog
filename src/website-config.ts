@@ -50,8 +50,8 @@ export interface WebsiteConfig {
 }
 
 const config: WebsiteConfig = {
-  title: 'Khalal Walker',
-  description: 'Personal Blog',
+  title: 'Not Another Tech Blog',
+  description: 'Khalal Walker',
   coverImage: 'img/code-cover.jpeg',
   lang: 'en',
   siteUrl: 'https://www.khalal.dev',

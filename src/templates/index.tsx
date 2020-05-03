@@ -20,7 +20,7 @@ import {
   SiteHeader,
   SiteHeaderContent,
   SiteMain,
-  SiteTitle,
+  SiteTitle
 } from '../styles/shared';
 import { PageContext } from './post';
 
@@ -128,12 +128,12 @@ const IndexPage: React.FC<IndexProps> = props => {
         <header
           css={[outer, SiteHeader]}
           style={{
-            backgroundImage: `url('${props.data.header.childImageSharp.fluid.src}')`,
+            backgroundImage: `url('${props.data.header.childImageSharp.fluid.src}')`
           }}
         >
           <div css={inner}>
             <SiteHeaderContent>
-              <SiteTitle>Khalal Walker</SiteTitle>
+              <SiteTitle>Not Another Tech Blog</SiteTitle>
               <SiteDescription>{config.description}</SiteDescription>
             </SiteHeaderContent>
             <SiteNav isHome />
