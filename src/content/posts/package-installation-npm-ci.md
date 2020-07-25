@@ -2,7 +2,7 @@
 author: Khalal Walker
 title: Project Installation with npm ci
 image: ../img/packages.jpg
-date: 2020-07-21
+date: 2020-07-25
 draft: false
 tags: ['npm', 'javascript']
 layout: post
