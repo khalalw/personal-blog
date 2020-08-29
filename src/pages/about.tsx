@@ -8,7 +8,7 @@ import { css } from '@emotion/core';
 import { PostFullHeader, PostFullTitle, NoImage, PostFull } from '../templates/post';
 import { PostFullContent } from '../components/PostContent';
 import Footer from '../components/Footer';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 
 const PageTemplate = css`
   .site-main {
@@ -38,18 +38,15 @@ const About: React.FC = () => (
             <div className="post-content">
               <p>Hello 👋🏾</p>
               <p>
-                My name is Khalal Walker. I'm a Software Engineer and JavaScript enthusiast based in
-                the San Francisco Bay Area.
+                My name is Khalal Walker. I'm a Software Engineer and JavaScript enthusiast based in Sacramento, CA.
               </p>
               <p>
-                This is my blog where I am documenting my thoughts around JavaScript, front-end
-                technologies, and creating inclusive spaces in tech.
+                This is my blog where I document my thoughts around JavaScript, front-end technologies, and the tech
+                industry, overall.
               </p>
               <p>I am currently working as a Front End Engineer.</p>
               <p>I am an alumnus of the greatest HBCU in the world, Jackson State University.</p>
-              <p>
-                The opinions expressed herein are my own and do not represent anyone but myself.
-              </p>
+              <p>The opinions expressed herein are my own and do not represent anyone but myself.</p>
             </div>
           </PostFullContent>
         </article>

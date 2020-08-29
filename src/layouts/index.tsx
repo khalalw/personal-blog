@@ -1,7 +1,7 @@
 import { Global, css } from '@emotion/core';
 import { darken, lighten } from 'polished';
 import * as React from 'react';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 
 import { colors } from '../styles/colors';
 // @ts-ignore
@@ -269,8 +269,8 @@ const GlobalStyles = css`
   body {
     overflow-x: hidden;
     color: ${darken('0.25', colors.midgrey)};
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-      'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+      'Helvetica Neue', sans-serif;
     font-size: 1.5rem;
     line-height: 1.6em;
     font-weight: 400;

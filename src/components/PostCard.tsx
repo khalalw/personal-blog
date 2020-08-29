@@ -198,10 +198,7 @@ export interface PostCardProps {
 
 const PostCard: React.FC<PostCardProps> = ({ post }) => {
   return (
-    <article
-      className={`post-card ${post.frontmatter.image ? '' : 'no-image'}`}
-      css={PostCardStyles}
-    >
+    <article className={`post-card ${post.frontmatter.image ? '' : 'no-image'}`} css={PostCardStyles}>
       {post.frontmatter.image && (
         <Link className="post-card-image-link" css={PostCardImageLink} to={post.fields.slug}>
           <PostCardImage className="post-card-image">
@@ -220,9 +217,7 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
       <PostCardContent className="post-card-content">
         <Link className="post-card-content-link" css={PostCardContentLink} to={post.fields.slug}>
           <header className="post-card-header">
-            {post.frontmatter.tags && (
-              <PostCardTags>{post.frontmatter.tags.join(', ')}</PostCardTags>
-            )}
+            {post.frontmatter.tags && <PostCardTags>{post.frontmatter.tags.join(', ')}</PostCardTags>}
             <PostCardTitle>{post.frontmatter.title}</PostCardTitle>
           </header>
           <PostCardExcerpt>

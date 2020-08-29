@@ -186,8 +186,7 @@ class SubscribeModal extends React.Component<any, SubscribeState> {
         <SubscribeOverlayContent>
           <SubscribeOverlayTitle>Subscribe to Khalal's Blog</SubscribeOverlayTitle>
           <SubscribeOverlayDescription>
-            Stay up to date! Get all the latest &amp; greatest posts delivered straight to your
-            inbox
+            Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox
           </SubscribeOverlayDescription>
           <SubscribeForm />
         </SubscribeOverlayContent>

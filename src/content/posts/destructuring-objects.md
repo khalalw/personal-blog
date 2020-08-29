@@ -18,7 +18,7 @@ Let's take a look at how we'd assign values pre-ES6:
 const character = {
   firstName: 'Spongebob',
   lastName: 'Squarepants',
-  age: 33,
+  age: 33
 };
 
 const firstName = character.firstName;
@@ -56,8 +56,8 @@ const character = {
   address: {
     street: '124 Conch Street',
     city: 'Bikini Bottom',
-    state: 'CA',
-  },
+    state: 'CA'
+  }
 };
 ```
 
@@ -79,7 +79,7 @@ Or... we can use nested destructuring:
 
 ```javascript
 const {
-  address: { street, city, state },
+  address: { street, city, state }
 } = character;
 
 console.log(street, city, state); // 124 Conch Street, Bikini Bottom, CA
@@ -93,7 +93,7 @@ If we want to create a reference to the `address` value, we'd just use a comma.
 ```javascript
 const {
   address,
-  address: { street, city, state },
+  address: { street, city, state }
 } = character;
 
 console.log(street, city, state); // 124 Conch Street, Bikini Bottom, CA

@@ -89,10 +89,7 @@ The `clear` method removes all entries from a given set.
 
 ```javascript
 const setA = new Set();
-setA
-  .add(1)
-  .add(3)
-  .add(5); // Set {1, 3, 5}
+setA.add(1).add(3).add(5); // Set {1, 3, 5}
 setA.clear();
 console.log(setA); // Set {}
 ```

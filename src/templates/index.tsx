@@ -86,6 +86,7 @@ export interface IndexProps {
 }
 
 const IndexPage: React.FC<IndexProps> = props => {
+  console.log({ props });
   const width = props.data.header.childImageSharp.fluid.sizes.split(', ')[1].split('px')[0];
   const height = String(Number(width) / props.data.header.childImageSharp.fluid.aspectRatio);
 
@@ -100,10 +101,7 @@ const IndexPage: React.FC<IndexProps> = props => {
         <meta property="og:title" content={config.title} />
         <meta property="og:description" content={config.description} />
         <meta property="og:url" content={config.siteUrl} />
-        <meta
-          property="og:image"
-          content={`${config.siteUrl}${props.data.header.childImageSharp.fluid.src}`}
-        />
+        <meta property="og:image" content={`${config.siteUrl}${props.data.header.childImageSharp.fluid.src}`} />
         {config.googleSiteVerification && (
           <meta name="google-site-verification" content={config.googleSiteVerification} />
         )}
@@ -111,16 +109,8 @@ const IndexPage: React.FC<IndexProps> = props => {
         <meta name="twitter:title" content={config.title} />
         <meta name="twitter:description" content={config.description} />
         <meta name="twitter:url" content={config.siteUrl} />
-        <meta
-          name="twitter:image"
-          content={`${config.siteUrl}${props.data.header.childImageSharp.fluid.src}`}
-        />
-        {config.twitter && (
-          <meta
-            name="twitter:site"
-            content={`@${config.twitter.split('https://twitter.com/')[1]}`}
-          />
-        )}
+        <meta name="twitter:image" content={`${config.siteUrl}${props.data.header.childImageSharp.fluid.src}`} />
+        {config.twitter && <meta name="twitter:site" content={`@${config.twitter.split('https://twitter.com/')[1]}`} />}
         <meta property="og:image:width" content={width} />
         <meta property="og:image:height" content={height} />
       </Helmet>
@@ -145,8 +135,7 @@ const IndexPage: React.FC<IndexProps> = props => {
               {props.data.allMarkdownRemark.edges.map(post => {
                 // filter out drafts in production
                 return (
-                  (post.node.frontmatter.draft !== true ||
-                    process.env.NODE_ENV !== 'production') && (
+                  (post.node.frontmatter.draft !== true || process.env.NODE_ENV !== 'production') && (
                     <PostCard key={post.node.fields.slug} post={post.node} />
                   )
                 );
@@ -155,10 +144,7 @@ const IndexPage: React.FC<IndexProps> = props => {
           </div>
         </main>
         {props.children}
-        <Pagination
-          currentPage={props.pageContext.currentPage}
-          numPages={props.pageContext.numPages}
-        />
+        <Pagination currentPage={props.pageContext.currentPage} numPages={props.pageContext.numPages} />
         <Footer />
       </Wrapper>
     </IndexLayout>

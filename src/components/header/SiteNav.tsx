@@ -144,51 +144,25 @@ class SiteNav extends React.Component<SiteNavProps> {
         <SiteNavRight>
           <SocialLinks>
             {config.github && (
-              <a
-                css={SocialLink}
-                href={config.github}
-                target="_blank"
-                title="GitHub"
-                rel="noopener noreferrer"
-              >
+              <a css={SocialLink} href={config.github} target="_blank" title="GitHub" rel="noopener noreferrer">
                 <GitHub />
               </a>
             )}
             {config.linkedin && (
-              <a
-                css={SocialLink}
-                href={config.linkedin}
-                target="_blank"
-                title="LinkedIn"
-                rel="noopener noreferrer"
-              >
+              <a css={SocialLink} href={config.linkedin} target="_blank" title="LinkedIn" rel="noopener noreferrer">
                 <LinkedIn />
               </a>
             )}
             {config.twitter && (
-              <a
-                css={SocialLink}
-                href={config.twitter}
-                title="Twitter"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a css={SocialLink} href={config.twitter} title="Twitter" target="_blank" rel="noopener noreferrer">
                 <Twitter />
               </a>
             )}
-            <a
-              css={SocialLink}
-              href="/rss.xml"
-              title="RSS"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a css={SocialLink} href="/rss.xml" title="RSS" target="_blank" rel="noopener noreferrer">
               <RSS />
             </a>
           </SocialLinks>
-          {config.showSubscribe && (
-            <SubscribeButton onClick={this.openModal}>Subscribe</SubscribeButton>
-          )}
+          {config.showSubscribe && <SubscribeButton onClick={this.openModal}>Subscribe</SubscribeButton>}
           {config.showSubscribe && <SubscribeModal ref={this.subscribe} />}
         </SiteNavRight>
       </nav>

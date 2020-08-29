@@ -189,9 +189,7 @@ const ReadNextCard: React.FC<ReadNextProps> = props => {
       render={({ header }: ReadNextQuery) => (
         <ReadNextCardStyles coverImage={header.childImageSharp.fluid.src}>
           <ReadNextCardHeader>
-            <ReadNextCardHeaderSitetitle>
-              &mdash; {config.title} &mdash;
-            </ReadNextCardHeaderSitetitle>
+            <ReadNextCardHeaderSitetitle>&mdash; {config.title} &mdash;</ReadNextCardHeaderSitetitle>
             <ReadNextCardHeaderTitle>
               <Link to={`/tags/${_.kebabCase(props.tags[0])}/`}>{props.tags[0]}</Link>
             </ReadNextCardHeaderTitle>
@@ -212,8 +210,7 @@ const ReadNextCard: React.FC<ReadNextProps> = props => {
           </ReadNextCardContent>
           <ReadNextCardFooter>
             <Link to={`/tags/${_.kebabCase(props.tags[0])}/`}>
-              {props.relatedPosts.totalCount > 1 &&
-                `See all ${props.relatedPosts.totalCount} posts`}
+              {props.relatedPosts.totalCount > 1 && `See all ${props.relatedPosts.totalCount} posts`}
               {props.relatedPosts.totalCount === 1 && '1 post'}
               {props.relatedPosts.totalCount === 0 && 'No posts'} →
             </Link>

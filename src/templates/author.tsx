@@ -18,10 +18,10 @@ import {
   SiteHeaderContent,
   SiteTitle,
   SiteMain,
-  SocialLink,
+  SocialLink
 } from '../styles/shared';
 import { PageContext } from './post';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import config from '../website-config';
 import Website from '../components/icons/website';
 import Twitter from '../components/icons/twitter';
@@ -124,17 +124,9 @@ const Author: React.FC<AuthorTemplateProps> = props => {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={`${author.id} - ${config.title}`} />
         <meta name="twitter:url" content={config.siteUrl + props.pathContext.slug} />
+        {config.twitter && <meta name="twitter:site" content={`@${config.twitter.split('https://twitter.com/')[1]}`} />}
         {config.twitter && (
-          <meta
-            name="twitter:site"
-            content={`@${config.twitter.split('https://twitter.com/')[1]}`}
-          />
-        )}
-        {config.twitter && (
-          <meta
-            name="twitter:creator"
-            content={`@${config.twitter.split('https://twitter.com/')[1]}`}
-          />
+          <meta name="twitter:creator" content={`@${config.twitter.split('https://twitter.com/')[1]}`} />
         )}
       </Helmet>
       <Wrapper>
